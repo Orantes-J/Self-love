@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Love</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel = 'stylesheet' href="{% static 'css/home.css' %}">
+  </head>
+<body>
+    <nav class="nav-intro">
+        <h3 class="nav-greeting" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Welcome to Self Love Shop</h3>
+        <ul class="nav-category">
+          <li class="zoom" onclick="ourPicks()"><a href="/toppicks">Top Picks</a></li>
+          <li class="zoom" onclick="bestSeller()"><a href="/bestsellers">Best Sellers</a></li>
+          <li class="zoom" onclick="newArrivals()" ><a href="/newarrivals">New Arrivals</a></li>
+        </ul>
+      </nav>
+    <img class="banner" src="{% static 'images\Self_Love_Brand_Final_Product.jpg' %}" width="1000" height="500">
+    <div>
+      <h2>Our Story</h2>
+      <div>
+        <!-- <img class="story" src="{% static 'images/ourstory.jpg' %}"> -->
+        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ea eius iste modi unde inventore, accusantium vitae. Temporibus labore saepe maxime recusandae aliquid magnam reprehenderit sed facere rem laboriosam exercitationem eveniet modi eaque illo consequatur, nulla debitis voluptates dolores officia inventore aut unde ab! Nostrum eius corporis qui, aut omnis illo accusantium consequuntur ab delectus quaerat nobis suscipit mollitia optio fuga eligendi quod vero possimus similique vel consectetur maxime dolorem recusandae. Amet quas minus ipsum odio placeat, saepe iure sequi ipsa similique velit culpa, vero voluptates accusamus aliquid consectetur, maiores minima id! Dolorum reiciendis recusandae praesentium mollitia, laboriosam, consequatur sapiente cum iusto vitae rerum iste odio doloremque harum velit nobis eveniet. Eaque libero repudiandae neque ut accusamus dolor, error hic, accusantium quos tenetur, consequatur unde perspiciatis recusandae assumenda ab nam atque. Recusandae laborum adipisci ab ad labore libero quidem. Ullam laboriosam, enim iste vero exercitationem nostrum, tenetur earum alias corporis laborum quae dolores nisi. Repudiandae fugit sapiente sint beatae error aliquam nesciunt blanditiis possimus provident natus libero nostrum minima earum explicabo, numquam saepe, reiciendis asperiores. Doloribus ipsum itaque iusto voluptatum praesentium maiores sint distinctio sequi dolorem rem? Aperiam excepturi fugit ab voluptatibus quaerat dicta consequatur iusto? Quas vitae eaque laborum molestiae dolores porro non molestias odit ipsum exercitationem! Vero quas rem quod delectus sit deserunt voluptates nemo qui minima? Quibusdam exercitationem soluta alias voluptatibus omnis rerum. Repellat vero molestiae culpa ipsa sapiente maiores itaque, commodi consectetur nihil eligendi excepturi voluptate quam tenetur odio esse sit doloribus deleniti quaerat accusantium aut? Commodi accusantium rem, quae unde qui recusandae praesentium doloribus totam, deserunt ad similique sit. Doloribus porro temporibus nihil quo eius aspernatur inventore nesciunt corporis adipisci sit delectus praesentium tempora consequuntur quae odio voluptas velit sint dolor, impedit ducimus blanditiis beatae? Totam quas unde libero omnis quos incidunt nemo dignissimos. Placeat?"</p>
+      </div>
+    </div>
+  <div class="footer">
+    <p class="footer-p">Follow Us On Social Media</p>
+    <ul class="social-links">
+      <li class="insta" onclick="instagram()"><img class="hyper-link-instagram" src="{% static 'images\instagram-icon.png' %}" height="48" width="50"></li>
+      <li class="facebook"onclick="facebook()"><img class="hyper-link-facebook" src="{% static 'images\facebook-icon.png' %}" height="40" width="80"></li>
+    </ul>
+  </div>
+    <script src="{% static 'js/basics.js' %}"></script>
+</body>
+</html>
